@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Assets | Anish Chakraborty</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <div class="header-left">
+      <img src="assets/profile.jpg" class="profile-pic" />
+    </div>
+
+    <div class="header-center">
+      <h1 class="name">Data Assets</h1>
+      <p class="quote">Institutional & Research Use</p>
+    </div>
+
+    <div class="header-right">
+      <a href="index.html" class="btn ghost">← Dashboard</a>
+    </div>
+  </header>
+
+  <!-- DATASETS CONTENT -->
+  <main class="datasets-page">
+
+  <!-- HEADER CONTROLS -->
+  <div class="datasets-header">
+    <div class="datasets-count">
+      Total Datasets: <span id="datasetCount">0</span>
+    </div>
+
+    <div class="datasets-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="available">Available</button>
+      <button class="filter-btn" data-filter="request">On Request</button>
+      <button class="filter-btn" data-filter="restricted">Restricted</button>
+    </div>
+  </div>
+
+  <!-- DATASET LIST -->
+  <div class="dataset-list">
+
+    <div class="dataset-row" data-status="available" data-title="Regional Media Data">
+      <span class="dataset-title">Regional Media Data</span>
+      <span class="dataset-status available">Available</span>
+    </div>
+
+    <div class="dataset-row" data-status="request" data-title="College Students">
+      <span class="dataset-title">College Students</span>
+      <span class="dataset-status request">On Request</span>
+    </div>
+
+    <div class="dataset-row" data-status="available" data-title="Social Media Influencer">
+      <span class="dataset-title">Social Media Influencer</span>
+      <span class="dataset-status available">Available</span>
+    </div>
+
+    <div class="dataset-row" data-status="request" data-title="Real Estate Data">
+      <span class="dataset-title">Real Estate Data</span>
+      <span class="dataset-status request">On Request</span>
+    </div>
+
+    <div class="dataset-row" data-status="available" data-title="Public Event Data">
+      <span class="dataset-title">Public Event Data</span>
+      <span class="dataset-status available">Available</span>
+    </div>
+
+    <div class="dataset-row" data-status="request" data-title="Start-up / Business Data">
+      <span class="dataset-title">Start-up / Business Data</span>
+      <span class="dataset-status request">On Request</span>
+    </div>
+
+    <div class="dataset-row" data-status="restricted" data-title="Political Data">
+      <span class="dataset-title">Political Data</span>
+      <span class="dataset-status restricted">Restricted</span>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- DATASET MODAL -->
+<div class="dataset-modal" id="datasetModal">
+  <div class="modal-content">
+    <h3 id="modalTitle"></h3>
+    <p>
+      This dataset is available for academic, research, or institutional
+      collaboration. Access is provided based on request and intended use.
+    </p>
+
+    <button class="btn ghost" id="closeModal">Close</button>
+  </div>
+</div>
+
+<script src="js/datasets.js"></script>
+
+
+</body>
+</html>
